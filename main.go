@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	r := raptor.NewRaptor(raptor.Config{
+	r := raptor.NewMVCRaptor(raptor.Config{
 		Address: "localhost",
 		Port:    3000,
 	})
