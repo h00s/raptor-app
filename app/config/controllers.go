@@ -6,7 +6,13 @@ import (
 )
 
 func Controllers() raptor.Controllers {
+	hc := &controllers.HomeController{}
+
 	return raptor.NewControllers(
-		&controllers.NewHomeController().Controller,
+		raptor.NewController("Home", &hc.Controller,
+			raptor.Action("Root", hc.Root),
+			raptor.Action("Index", hc.Index),
+			raptor.Action("Example", hc.Example),
+		),
 	)
 }
