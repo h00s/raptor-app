@@ -6,8 +6,8 @@ import (
 
 func Routes() raptor.Routes {
 	return raptor.Routes{
-		raptor.Route("GET", "/", "Home", "Root"),
-		raptor.Route("GET", "/Home", "Home", "Index"),
-		raptor.Route("GET", "/Home/Example", "Home", "Example"),
+		raptor.Route("GET", "/", "HomeController", "Root"),
+		raptor.Route("GET", "/Home", "HomeController", "Index"),
+		raptor.Route("GET", "/Home/Example", "HomeController", "Example"),
 	}
 }
