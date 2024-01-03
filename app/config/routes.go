@@ -9,5 +9,7 @@ func Routes() raptor.Routes {
 		raptor.Route("GET", "/", "HomeController", "Root"),
 		raptor.Route("GET", "/Home", "HomeController", "Index"),
 		raptor.Route("GET", "/Home/Example", "HomeController", "Example"),
+		raptor.Route("GET", "/movies", "MoviesController", "Index"),
+		raptor.Route("GET", "/movies/:id", "MoviesController", "Show"),
 	}
 }
