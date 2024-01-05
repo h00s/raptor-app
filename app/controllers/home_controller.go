@@ -9,13 +9,5 @@ type HomeController struct {
 }
 
 func (hc *HomeController) Root(c *raptor.Context) error {
-	return c.SendString("Hello from Home#Root")
-}
-
-func (hc *HomeController) Index(c *raptor.Context) error {
-	return c.SendString("Hello from Home#Index")
-}
-
-func (hc *HomeController) Example(c *raptor.Context) error {
-	return c.SendString("Hello from Home#Example")
+	return c.Render("home/root", nil)
 }
