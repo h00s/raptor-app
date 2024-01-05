@@ -2,7 +2,7 @@ package services
 
 import (
 	"github.com/h00s/raptor"
-	"github.com/h00s/raptor-api/app/models"
+	"github.com/h00s/raptor-app/app/models"
 	"golang.org/x/exp/maps"
 )
 

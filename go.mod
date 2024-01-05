@@ -1,12 +1,9 @@
 module github.com/h00s/raptor-app
 
-go 1.21.4
-
-replace github.com/h00s/raptor => /Users/h00s/Stuff/dev/godev/raptor
+go 1.21.5
 
 require (
-	github.com/h00s/raptor v0.1.0
-	github.com/h00s/raptor-api v0.0.0-20240103153316-7353d5ba6fbc
+	github.com/h00s/raptor v0.1.3
 	golang.org/x/exp v0.0.0-20231226003508-02704c960a9b
 )
 
